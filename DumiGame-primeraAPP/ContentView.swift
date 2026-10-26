@@ -11,7 +11,7 @@ struct ContentView: View { //View es un Protocol
     var body: some View { //tiene que tener una computed var body (some View es una combinación de fichas lego que forman mi pantalla)
         //solo devuelve lo primeo que encuentra no varios (devuelve text no button)
         Text("Hello, world!")
-            .foregroundColor(Color.blue)
+            .foregroundColor(Color.red)
             .padding()
         Button("Tap me"){}
     }
