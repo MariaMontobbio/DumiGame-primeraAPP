@@ -32,6 +32,7 @@ struct ContentView: View { //View es un Protocol
                     Text("100")
                         .fontWeight(.bold)
                 }
+                Text("\(sliderValue)")
                 
                 Button("TRY"){
                     self.alertIsVisisble = true
