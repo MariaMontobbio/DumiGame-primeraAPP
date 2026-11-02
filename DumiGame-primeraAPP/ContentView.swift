@@ -44,10 +44,11 @@ struct ContentView: View { //View es un Protocol
         }
         .alert(isPresented: $alertIsVisisble) {
             Alert(
-                title: Text("Hello"),
-                message: Text("This is my fisrt alert"),
+                title: Text("Congratulations"),
+                message: Text("You've won \(game.points) points"),
                 dismissButton: .default(Text("Got it")) {
-                    print("alert is close")
+                    game.startNewGame()
+                    self.sliderValue = 20.0
                 }
             )
         }
