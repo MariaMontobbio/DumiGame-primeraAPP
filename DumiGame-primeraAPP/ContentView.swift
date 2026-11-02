@@ -24,14 +24,8 @@ struct ContentView: View { //View es un Protocol
                     .fontWeight(.bold)
                     .kerning(-1) //espaciado entre letras
                 
-                HStack {
-                    Text("1")
-                        .fontWeight(.bold)
-
-                    Slider(value: $sliderValue, in: 1...100)
-                    Text("100")
-                        .fontWeight(.bold)
-                }
+                //Slider
+                SliderView(value: $sliderValue)
                 Text("\(sliderValue)")
                 
                 Button("TRY"){
@@ -53,6 +47,22 @@ struct ContentView: View { //View es un Protocol
                     print("alert is close")
                 }
             )
+        }
+    }
+}
+
+struct SliderView: View {
+    
+    @Binding var value: Double //se sincronizan los valores de la variable con el super view
+    
+    var body: some View {
+        HStack {
+            Text("1")
+                .fontWeight(.bold)
+
+            Slider(value: $value, in: 1...100) //$ cuando necesito leeer y sbreescribir sobre esa variable
+            Text("100")
+                .fontWeight(.bold)
         }
     }
 }
