@@ -8,14 +8,16 @@
 import Foundation
 
 struct Game {
-    private(set) var target = Int.random(in: 1...100)
+    static let minValue = 1
+    static let maxValue = 100
+    private(set) var target = Int.random(in: Game.minValue...Game.maxValue)
     private(set) var points = 0
     
     mutating func calculatePoints(sliderValue: Double) {
-        self.points = 100 - Int(abs(sliderValue - Double(target)))
+        self.points = 100 - Int(abs(sliderValue.rounded() - Double(target)))
     }
     
     mutating func startNewGame() {
-        self.target = Int.random(in: 1...100)
+        self.target = Int.random(in: Game.minValue...Game.maxValue)
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View { //View es un Protocol
     
     @State private var alertIsVisisble = false //esta variabe gestiona un estado (property doupper state)
-    @State var sliderValue = 20.0 //State porque dentro del body van a cambiarse de valor | @ porque se muestran simultaneamente al cambiarse de valor
+    @State var sliderValue = Double(Game.maxValue - Game.minValue)/2.0 //State porque dentro del body van a cambiarse de valor | @ porque se muestran simultaneamente al cambiarse de valor
     
     @State private var game = Game()
     
@@ -27,7 +27,7 @@ struct ContentView: View { //View es un Protocol
                     .kerning(-1) //espaciado entre letras
                 
                 //Slider
-                SliderView(value: $sliderValue)
+                SliderView(value: $sliderValue, min: Game.minValue, max: Game.maxValue)
                 Text("\(sliderValue)")
                 
                 Button("TRY"){
@@ -48,7 +48,7 @@ struct ContentView: View { //View es un Protocol
                 message: Text("You've won \(game.points) points"),
                 dismissButton: .default(Text("Got it")) {
                     game.startNewGame()
-                    self.sliderValue = 20.0
+                    self.sliderValue = Double(Game.maxValue - Game.minValue)/2.0
                 }
             )
         }
@@ -58,14 +58,16 @@ struct ContentView: View { //View es un Protocol
 struct SliderView: View {
     
     @Binding var value: Double //se sincronizan los valores de la variable con el super view
+    let min : Int
+    let max : Int
     
     var body: some View {
         HStack {
-            Text("1")
+            Text("\(min)")
                 .fontWeight(.bold)
 
-            Slider(value: $value, in: 1...100) //$ cuando necesito leeer y sbreescribir sobre esa variable
-            Text("100")
+            Slider(value: $value, in: Double(min)...Double(max)) //$ cuando necesito leeer y sbreescribir sobre esa variable
+            Text("\(max)")
                 .fontWeight(.bold)
         }
     }
