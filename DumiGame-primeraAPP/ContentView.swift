@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View { //View es un Protocol
+    
+    @State private var alertIsVisisble = false //esta variabe gestiona un estado (property doupper state)
+    
     var body: some View {
         ZStack {
             Color("BackgroundColor").ignoresSafeArea()
@@ -30,8 +33,7 @@ struct ContentView: View { //View es un Protocol
                 }
                 
                 Button("TRY"){
-                    //accion onClick
-                    print("tapped")
+                    self.$alertIsVisisble = true
                 }
                 .font(.title3)
                 .foregroundColor(.white)
@@ -40,6 +42,15 @@ struct ContentView: View { //View es un Protocol
                 .cornerRadius(21)
             }
             .padding()
+        }
+        .alert(isPresented: $alertIsVisisble) {
+            Alert(
+                title: Text("Hello"),
+                message: Text("This is my fisrt alert"),
+                dismissButton: .default(Text("Got it")) {
+                    print("alert is close")
+                }
+            )
         }
     }
 }
