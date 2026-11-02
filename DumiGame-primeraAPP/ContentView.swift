@@ -33,7 +33,7 @@ struct ContentView: View { //View es un Protocol
                 }
                 
                 Button("TRY"){
-                    self.$alertIsVisisble = true
+                    self.alertIsVisisble = true
                 }
                 .font(.title3)
                 .foregroundColor(.white)
