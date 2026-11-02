@@ -14,4 +14,9 @@ struct DumiGame_primeraAPPApp: App { //punto de entrada al programa
             ContentView()
         }
     }
+    var previews: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
 }
