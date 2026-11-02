@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View { //View es un Protocol
     
     @State private var alertIsVisisble = false //esta variabe gestiona un estado (property doupper state)
+    @State var sliderValue = 20.0 //State porque dentro del body van a cambiarse de valor | @ porque se muestran simultaneamente al cambiarse de valor
     
     var body: some View {
         ZStack {
@@ -27,7 +28,7 @@ struct ContentView: View { //View es un Protocol
                     Text("1")
                         .fontWeight(.bold)
 
-                    Slider(value: .constant(20), in: 1...100)
+                    Slider(value: $sliderValue, in: 1...100)
                     Text("100")
                         .fontWeight(.bold)
                 }
