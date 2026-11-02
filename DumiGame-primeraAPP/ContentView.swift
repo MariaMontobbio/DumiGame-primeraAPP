@@ -12,6 +12,8 @@ struct ContentView: View { //View es un Protocol
     @State private var alertIsVisisble = false //esta variabe gestiona un estado (property doupper state)
     @State var sliderValue = 20.0 //State porque dentro del body van a cambiarse de valor | @ porque se muestran simultaneamente al cambiarse de valor
     
+    @State private var game = Game()
+    
     var body: some View {
         ZStack {
             Color("BackgroundColor").ignoresSafeArea()
@@ -19,7 +21,7 @@ struct ContentView: View { //View es un Protocol
                 Text("🎯🎯🎯")
                     .font(.largeTitle)
                 
-                Text("89")
+                Text("\(game.target)")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .kerning(-1) //espaciado entre letras
@@ -29,6 +31,7 @@ struct ContentView: View { //View es un Protocol
                 Text("\(sliderValue)")
                 
                 Button("TRY"){
+                    game.calculatePoints(sliderValue: sliderValue)
                     self.alertIsVisisble = true
                 }
                 .font(.title3)
