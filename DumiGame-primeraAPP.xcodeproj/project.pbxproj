@@ -15,6 +15,7 @@
 		EFF6FD9430A21958007B6EE2 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FD9330A21958007B6EE2 /* BackgroundView.swift */; };
 		EFF6FD9730A21C3A007B6EE2 /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FD9630A21C3A007B6EE2 /* SymbolView.swift */; };
 		EFF6FD9B30A21F55007B6EE2 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FD9A30A21F55007B6EE2 /* NumberView.swift */; };
+		EFF6FDA030A225B8007B6EE2 /* MarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FD9F30A225B8007B6EE2 /* MarksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EFF6FD9330A21958007B6EE2 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		EFF6FD9630A21C3A007B6EE2 /* SymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolView.swift; sourceTree = "<group>"; };
 		EFF6FD9A30A21F55007B6EE2 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		EFF6FD9F30A225B8007B6EE2 /* MarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				EFF6FD9330A21958007B6EE2 /* BackgroundView.swift */,
 				EFF6FD9630A21C3A007B6EE2 /* SymbolView.swift */,
 				EFF6FD9A30A21F55007B6EE2 /* NumberView.swift */,
+				EFF6FD9F30A225B8007B6EE2 /* MarksView.swift */,
 				EFF5CC8D3098E6210060095B /* Game.swift */,
 				EFCAF86E308FA97600EC1F8E /* Assets.xcassets */,
 				EFCAF873308FA97600EC1F8E /* Info.plist */,
@@ -152,6 +155,7 @@
 			files = (
 				EFF6FD9430A21958007B6EE2 /* BackgroundView.swift in Sources */,
 				EFF6FD9730A21C3A007B6EE2 /* SymbolView.swift in Sources */,
+				EFF6FDA030A225B8007B6EE2 /* MarksView.swift in Sources */,
 				EFCAF86D308FA97500EC1F8E /* ContentView.swift in Sources */,
 				EFF5CC8E3098E6210060095B /* Game.swift in Sources */,
 				EFCAF86B308FA97500EC1F8E /* DumiGame_primeraAPPApp.swift in Sources */,

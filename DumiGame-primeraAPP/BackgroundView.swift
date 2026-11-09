@@ -10,6 +10,7 @@ import SwiftUI
 struct BackgroundView: View {
     
     @Binding var game:Game
+    @State var sheetIsVisible = false
     
     var body: some View {
         ZStack {
@@ -23,17 +24,23 @@ struct BackgroundView: View {
                         SymbolView(symbolName: "arrow.clockwise")
                     })
                     Spacer()
-                    SymbolView(symbolName: "list.dash")
+                    Button(action: {
+                        
+                    }, label: {
+                        SymbolView(symbolName: "list.dash")
+                    })
                     
                 }
                 Spacer()
                 HStack {
                     NumberView(text: "SCORE", value: game.score)
                     Spacer()
-                    NumberView(text: "ROUND", value: 0)
+                    NumberView(text: "ROUND", value: game.rounds)
                 }
             }.padding()
-        }
+        }.sheet(isPresented: $sheetIsVisible, content: {
+            MarksView()
+        })
     }
 }
 

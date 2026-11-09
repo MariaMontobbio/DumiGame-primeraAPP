@@ -22,6 +22,7 @@ struct Game {
     
     mutating func startNewRound() {
         self.target = Int.random(in: Game.minValue...Game.maxValue)
+        self.rounds += 1
     }
     
     mutating func restartGame() {

@@ -48,7 +48,7 @@ struct ContentView: View { //View es un Protocol
                 title: Text("Congratulations"),
                 message: Text("You've won \(game.points) points"),
                 dismissButton: .default(Text("Got it")) {
-                    game.startNewGame()
+                    game.startNewRound()
                     self.sliderValue = Double(Game.maxValue - Game.minValue)/2.0
                 }
             )
