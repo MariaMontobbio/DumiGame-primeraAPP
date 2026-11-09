@@ -22,13 +22,13 @@ struct BackgroundView: View {
                         game.restartGame()
                     }, label: {
                         SymbolView(symbolName: "arrow.clockwise")
-                    })
+                    }).foregroundColor(.primary)
                     Spacer()
                     Button(action: {
-                        
+                        sheetIsVisible = true
                     }, label: {
                         SymbolView(symbolName: "list.dash")
-                    })
+                    }).foregroundColor(.primary)
                     
                 }
                 Spacer()
@@ -38,9 +38,9 @@ struct BackgroundView: View {
                     NumberView(text: "ROUND", value: game.rounds)
                 }
             }.padding()
-        }.sheet(isPresented: $sheetIsVisible, content: {
+        }.sheet(isPresented: $sheetIsVisible) {
             MarksView()
-        })
+        }
     }
 }
 
