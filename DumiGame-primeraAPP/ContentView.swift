@@ -16,7 +16,8 @@ struct ContentView: View { //View es un Protocol
     
     var body: some View {
         ZStack {
-            Color("BackgroundColor").ignoresSafeArea()
+            BackgroundView().ignoresSafeArea()
+            
             VStack {
                 Text("🎯🎯🎯")
                     .font(.largeTitle)
