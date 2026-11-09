@@ -39,7 +39,7 @@ struct BackgroundView: View {
                 }
             }.padding()
         }.sheet(isPresented: $sheetIsVisible) {
-            MarksView()
+            MarksView(sheetIsVisible: $sheetIsVisible)
         }
     }
 }

@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct MarksView: View {
+    
+    @Binding var sheetIsVisible: Bool
+    
     var body: some View {
-        Text("TODO Marks")
+        ZStack{
+            HStack {
+                Text("MARKS")
+                Spacer()
+                Button(action: {
+                    sheetIsVisible = false
+                }, label: {Text("Close")})
+            }
+        
+        }
     }
 }
 
 struct MarksView_Previews: PreviewProvider {
     static var previews: some View {
-        MarksView()
+        MarksView(sheetIsVisible: .constant(true))
     }
 }
