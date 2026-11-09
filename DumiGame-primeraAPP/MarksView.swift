@@ -20,7 +20,23 @@ struct MarksView: View {
                     sheetIsVisible = false
                 }, label: {Text("Close")})
             }
+            VStack {
+                
+            }
         
+        }.padding()
+    }
+}
+
+struct MarkView: View {
+    
+    let numMark: Int
+    let score: Int
+    let time = 0
+    
+    var body: some View {
+        HStack {
+            
         }
     }
 }
