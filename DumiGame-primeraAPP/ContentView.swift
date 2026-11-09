@@ -16,7 +16,7 @@ struct ContentView: View { //View es un Protocol
     
     var body: some View {
         ZStack {
-            BackgroundView().ignoresSafeArea()
+            BackgroundView(game: $game).ignoresSafeArea()
             
             VStack {
                 Text("🎯🎯🎯")

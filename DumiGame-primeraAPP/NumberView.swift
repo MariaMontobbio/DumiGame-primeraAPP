@@ -23,6 +23,6 @@ struct NumberView: View {
 
 struct NumberView_Previews: PreviewProvider {
     static var previews: some View {
-        NumberView()
+        NumberView(text: "ROUND", value: 0)
     }
 }

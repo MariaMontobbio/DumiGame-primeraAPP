@@ -21,6 +21,6 @@ struct SymbolView: View {
 
 struct SymbolView_Previews: PreviewProvider {
     static var previews: some View {
-        SymbolView()
+        SymbolView(symbolName: "")
     }
 }
