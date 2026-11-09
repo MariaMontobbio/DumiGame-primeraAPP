@@ -12,6 +12,9 @@
 		EFCAF86F308FA97600EC1F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCAF86E308FA97600EC1F8E /* Assets.xcassets */; };
 		EFCAF872308FA97600EC1F8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCAF871308FA97600EC1F8E /* Preview Assets.xcassets */; };
 		EFF5CC8E3098E6210060095B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF5CC8D3098E6210060095B /* Game.swift */; };
+		EFF6FD9430A21958007B6EE2 /* TestVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FD9330A21958007B6EE2 /* TestVeiw.swift */; };
+		EFF6FD9730A21C3A007B6EE2 /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FD9630A21C3A007B6EE2 /* SymbolView.swift */; };
+		EFF6FD9B30A21F55007B6EE2 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FD9A30A21F55007B6EE2 /* NumberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EFCAF871308FA97600EC1F8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EFCAF873308FA97600EC1F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFF5CC8D3098E6210060095B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EFF6FD9330A21958007B6EE2 /* TestVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVeiw.swift; sourceTree = "<group>"; };
+		EFF6FD9630A21C3A007B6EE2 /* SymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolView.swift; sourceTree = "<group>"; };
+		EFF6FD9A30A21F55007B6EE2 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				EFCAF86A308FA97500EC1F8E /* DumiGame_primeraAPPApp.swift */,
 				EFCAF86C308FA97500EC1F8E /* ContentView.swift */,
+				EFF6FD9330A21958007B6EE2 /* TestVeiw.swift */,
+				EFF6FD9630A21C3A007B6EE2 /* SymbolView.swift */,
+				EFF6FD9A30A21F55007B6EE2 /* NumberView.swift */,
 				EFF5CC8D3098E6210060095B /* Game.swift */,
 				EFCAF86E308FA97600EC1F8E /* Assets.xcassets */,
 				EFCAF873308FA97600EC1F8E /* Info.plist */,
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF6FD9430A21958007B6EE2 /* TestVeiw.swift in Sources */,
+				EFF6FD9730A21C3A007B6EE2 /* SymbolView.swift in Sources */,
 				EFCAF86D308FA97500EC1F8E /* ContentView.swift in Sources */,
 				EFF5CC8E3098E6210060095B /* Game.swift in Sources */,
 				EFCAF86B308FA97500EC1F8E /* DumiGame_primeraAPPApp.swift in Sources */,
+				EFF6FD9B30A21F55007B6EE2 /* NumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
